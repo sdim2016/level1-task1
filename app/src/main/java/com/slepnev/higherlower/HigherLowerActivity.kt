@@ -2,6 +2,7 @@ package com.slepnev.higherlower
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_higher_lower.*
 
 class HigherLowerActivity : AppCompatActivity() {
@@ -64,14 +65,14 @@ class HigherLowerActivity : AppCompatActivity() {
      * Displays a successful Toast message.
      */
     private fun onAnswerCorrect() {
-
+        Toast.makeText(this, getString(R.string.correct), Toast.LENGTH_SHORT).show()
     }
 
     /**
      * Displays a incorrect Toast message.
      */
     private fun onAnswerIncorrect() {
-
+        Toast.makeText(this, getString(R.string.incorrect), Toast.LENGTH_SHORT).show()
     }
 
 
