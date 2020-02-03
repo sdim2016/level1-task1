@@ -52,21 +52,27 @@ class HigherLowerActivity : AppCompatActivity() {
      * Calls [rollDice] and checks if the answer is correct.
      */
     private fun onHigherClick() {
-
+        rollDice()
+        if (currentThrow > lastThrow) onAnswerCorrect()
+        else onAnswerIncorrect()
     }
 
     /**
      * Calls [rollDice] and checks if the answer is correct.
      */
     private fun onLowerClick() {
-
+        rollDice()
+        if (currentThrow < lastThrow) onAnswerCorrect()
+        else onAnswerIncorrect()
     }
 
     /**
      * Calls [rollDice] and checks if the answer is correct.
      */
     private fun onEqualClick() {
-
+        rollDice()
+        if (currentThrow == lastThrow) onAnswerCorrect()
+        else onAnswerIncorrect()
     }
 
     /**
