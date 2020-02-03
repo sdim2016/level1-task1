@@ -4,4 +4,5 @@
     <string name="lower">Lower</string>
     <string name="equals">Equals</string>
     <string name="higher">Higher</string>
+    <string name="last_throw">Last Throw: %d</string>
 </resources>
